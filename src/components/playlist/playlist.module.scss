@@ -1,0 +1,103 @@
+.styles {
+  position: relative;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: opacity .3s ease-in-out;
+  width: 100%;
+  height: 735px;
+  overflow: hidden;
+  box-shadow: 0 81px 70px 30px rgba(0, 0, 0, 0.5) inset;
+  display: flex;
+  align-items: flex-start;
+  &:hover {
+    opacity: 1;
+  }
+}
+
+.musicBox {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin: 15px 0 0 15px;
+  justify-content: center;
+  align-items: center;
+}
+
+.song {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 5px;
+}
+
+.details {
+  font-size: 10px;
+  font-weight: 400;
+}
+
+.buttons {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  gap: 15px;
+}
+
+.btnsStyles {
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 25px;
+  height: 25px;
+  cursor: pointer;
+  scale: 1;
+  &:hover {
+    scale: 1.1;
+  }
+}
+
+.prevBtn {
+  background-image: url("../../images/previous.png");
+  composes: btnsStyles;
+}
+
+.playBtn {
+  background-image: url("../../images/play-button.png");
+  composes: btnsStyles;
+}
+
+.nextBtn {
+  background-image: url("../../images/next.png");
+  composes: btnsStyles;
+}
+
+.range {
+  max-width: 400px;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.progressBar {
+  padding: 0;
+  position: relative;
+  width: 100px;
+  height: 1.2em;
+  -webkit-appearance: none;
+  background: transparent;
+  border: 2px solid white;
+  outline: none;
+  color: white;
+}
+
+.back {
+  background-image: url("../../images/radio-me.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 1230px;
+  height: 735px;
+  //box-shadow: 0 0 181px 0 rgba(0, 0, 0, 0.8) inset;
+}

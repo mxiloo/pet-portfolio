@@ -1,0 +1,55 @@
+.backgroundBox {
+  max-width: 900px;
+  width: 100%;
+  height: 400px;
+  background-image: url("../../images/background-mesto.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 20px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  gap: 10px;
+  box-shadow: 0 0 81px 0 rgba(0, 0, 0, 0.6) inset;
+  position: relative;
+  z-index: 2;
+}
+
+.sitePixels {
+  transform: scale(1);
+  background-image: url("../../images/mesto-site.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 450px;
+  height: 253px;
+  position: absolute;
+  top: 80px;
+  right: -160px;
+  box-shadow: 0 0 81px 0 rgba(0, 0, 0, 0.9) inset;
+  z-index: 3;
+  border-radius: 20px;
+  transition: transform .1s linear;
+  cursor: pointer;
+
+  &:hover {
+    transform: scale(1.1);
+  }
+}
+
+.textBox {
+  max-width: 500px;
+  text-align: start;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  margin-left: 50px;
+}
+
+.octopusGif {
+  background-image: url("../../images/mesto-push.gif");
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 35px;
+  height: 35px;
+}

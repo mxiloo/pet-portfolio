@@ -1,0 +1,46 @@
+.backgroundBox {
+  max-width: 900px;
+  width: 100%;
+  height: 400px;
+  background-image: url("../../images/background-travel.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 20px;
+  display: flex;
+  align-items: end;
+  justify-content: center;
+  flex-direction: column;
+  gap: 10px;
+  box-shadow: 0 0 81px 0 rgba(0, 0, 0, 0.6) inset;
+  position: relative;
+  z-index: 2;
+}
+
+.sitePixels {
+  transform: scale(1);
+  background-image: url("../../images/travel-site.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 450px;
+  height: 253px;
+  position: absolute;
+  left: -160px;
+  bottom: 60px;
+  box-shadow: 0 0 81px 0 rgba(0, 0, 0, 0.9) inset;
+  z-index: 3;
+  border-radius: 20px;
+  transition: transform .1s linear;
+  cursor: pointer;
+
+  &:hover {
+    transform: scale(1.1);
+  }
+}
+
+.carGif {
+  background-image: url("../../images/froggy.gif");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 35px;
+  height: 35px;
+}
