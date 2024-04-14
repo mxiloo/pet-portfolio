@@ -12,17 +12,17 @@ type TMusicDetails = {
 
 function Playlist() {
 
-    const [musicDetails, setMusicDetails] = useState<TMusicDetails>({
-        songName: 'Lifelike',
-        artist: 'Porter Robinson',
-        song: ''
-    });
-
-    const [musicProgressBar, setMusicProgressBar] = useState<number>(50)
-
-    const handleAudioProgress = (e) => {
-        setMusicProgressBar(e.target.value)
-    }
+    // const [musicDetails, setMusicDetails] = useState<TMusicDetails>({
+    //     songName: 'Lifelike',
+    //     artist: 'Porter Robinson',
+    //     song: ''
+    // });
+    //
+    // const [musicProgressBar, setMusicProgressBar] = useState<number>(50)
+    //
+    // const handleAudioProgress = (e) => {
+    //     setMusicProgressBar(e.target.value)
+    // }
 
     return (
         <section className={styles.styles}>

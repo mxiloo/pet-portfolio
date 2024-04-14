@@ -1,14 +1,14 @@
 'use client';
 import styles from './element-btn.module.scss'
 import {TState} from "@/components/content/content";
-import {useEffect} from "react";
+import React, {useEffect} from "react";
 
 type TProps = {
     url: string,
     width: string,
     name: string,
-    children: JSX.ElementChildrenAttribute,
-    onClick: Function,
+    children: React.ReactNode,
+    onClick: () => void,
     activeContent: TState,
     contentType: string
 }

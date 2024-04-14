@@ -22,6 +22,7 @@ export type TState = {
     projects: boolean,
     resume: boolean,
     playlist: boolean,
+    [key: string]: boolean | undefined;
 }
 
 function Content() {
@@ -79,7 +80,7 @@ function Content() {
         }, 400);
     };
 
-    const handleClick = (content) => {
+    const handleClick = (content: string) => {
         setActiveContent(prevState => ({
             ...prevState,
             [content]: !prevState[content]
