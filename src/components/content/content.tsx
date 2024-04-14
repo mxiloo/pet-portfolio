@@ -92,7 +92,8 @@ function Content() {
             <div className={styles.switches}>
                 <button className={styles.arrowLeft} onClick={changeToPreviousWallpaper}
                         disabled={currentWallpaper === defaultState}></button>
-                <button className={currentWallpaper === defaultState ? styles.btn : styles.btnOn } onClick={onOpen}></button>
+                <button className={currentWallpaper === defaultState ? styles.btn : styles.btnOn}
+                        onClick={onOpen}></button>
                 <button className={styles.arrowRight} onClick={changeToNextWallpaper}
                         disabled={currentWallpaper === defaultState}></button>
             </div>
@@ -107,32 +108,36 @@ function Content() {
                 <ElementBtn
                     activeContent={activeContent}
                     url={folderPic.src} name={'Проекты'}
-                    contentType = {'projects'}
+                    contentType={'projects'}
                     width={'93px'}
                     onClick={() => handleClick('projects')}>
 
-                    <Projects />
+                    <Projects/>
 
                 </ElementBtn>
-                <ElementBtn
-                    activeContent={activeContent}
-                    url={infoMe.src} name={'Резюме'}
-                    contentType = {'resume'}
-                    width={'75px'}
-                    onClick={() => handleClick('resume')}>
+                <a className={styles.link} href='https://disk.yandex.ru/i/rImF2P45aR_LqQ' target='_blank'>
+                    <ElementBtn
+                        activeContent={activeContent}
+                        url={infoMe.src} name={'Резюме'}
+                        contentType={'resume'}
+                        width={'75px'}
+                        onClick={() => handleClick('')}>
 
-                    <Resume />
 
-                </ElementBtn>
+                        <Resume/>
+
+
+                    </ElementBtn>
+                </a>
                 <ElementBtn
                     activeContent={activeContent}
                     url={playlist.src}
                     name={'Плейлист'}
-                    contentType = {'playlist'}
+                    contentType={'playlist'}
                     width={'75px'}
                     onClick={() => handleClick('playlist')}>
 
-                    <Playlist />
+                    <Playlist/>
 
                 </ElementBtn>
             </div>

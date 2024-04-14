@@ -26,7 +26,9 @@ function Playlist() {
 
     return (
         <section className={styles.styles}>
-            <audio src={musicDetails.song}></audio>
+            <audio>
+                <source src='../../radio/Porter_Robinson_-_Lifelike_73501082.mp3' type='audio/mp3'/>
+            </audio>
             <div className={styles.overlay}>
                 <div className={styles.musicBox}>
                     <div className={styles.details}>

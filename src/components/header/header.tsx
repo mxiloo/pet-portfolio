@@ -6,8 +6,10 @@ function Header() {
         <header className={styles.box}>
             <div className={styles.scanlines}></div>
             <li className={styles.li}>
-                <ul className={styles.logo}>
-                </ul>
+                <a href='https://github.com/mxiloo' target="_blank">
+                    <ul className={styles.logo}>
+                    </ul>
+                </a>
                 <ul className={styles.ul}>
                     Вид
                 </ul>
